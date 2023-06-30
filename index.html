@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathi guchait protfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(4, 65, 65);
+            color: azure;
+            font-style: oblique;
+        }
+
+        #protfolio {
+            color: rgb(230, 53, 92);
+        }
+
+        nav {
+            background-color: rgb(33, 126, 126);
+            height: 80px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        nav ul {
+            display: flex;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: azure;
+        }
+
+
+        a:hover {
+            color: rgb(159, 252, 219);
+            font-size: 19px;
+
+        }
+
+        .left {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .section1 {
+            display: flex;
+            justify-content: space-around;
+            margin: 29px 0;
+            text-shadow: 10px 10px 10px #d33e81;
+
+
+        }
+
+        .leftside {
+            font-size: 30px;
+            margin: 30px;
+            padding-left: 20px;
+            padding-top: 40px;
+        }
+
+        #name {
+            font-variant: small-caps;
+        }
+
+        .left {
+            animation: 5s anim-fromtop linear infinite;
+        }
+
+        @keyframes anim-fromtop {
+            0% {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+
+            25% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+
+            50% {}
+
+            100% {}
+        }
+
+        #element {
+            color: #d6136b;
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+            border-radius: 50%;
+
+        }
+
+        .rightside {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+            padding-top: 5px;
+
+        }
+
+        .footer {
+            text-align: center;
+            padding-top: 45px;
+
+        }
+
+        #footer {
+            /* background-color: rgb(17, 110, 110); */
+            height: 25%;
+
+        }
+
+        #foo {
+            color: #dd3da8;
+            font-weight: bold;
+        }
+
+        p {
+            word-spacing: 10px;
+        }
+
+        .welcome {
+            color: rgb(3, 2, 8);
+            font-weight: bold;
+        }
+
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content div {
+            float: none;
+            color: black;
+            padding: 10px 1px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content div:hover {
+            background-color: #e7ebec;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        #dropcontact {
+            text-decoration: underline;
+        }
+
+
+        @media only screen and (max-width:768px) {
+            body {
+                font-size: 10px;
+            }
+
+            nav ul li {
+                list-style: none;
+                margin: 0 5px;
+            }
+
+            .left {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+        }
+
+
+        @media only screen and (max-width:320px){
+           body{
+            font-size: 10px;
+           }
+           nav ul li {
+            list-style: none;
+            margin: 3px;
+        }
+        .left {
+            font-size: 12px;
+            font-weight: bold;
+        }
+         
+        .leftside{
+            font-size: 20px;
+            margin: 30px;
+            padding-left: 20px;
+            padding-top: 40px;
+        }
+        img {
+            width: 80%;
+            height: auto;
+            border-radius: 50%;
+
+        }
+
+        .footer {
+            text-align: center;
+            padding-top: 25px;
+            margin-top: 50px;
+        }
+
+
+    }
+    </style>
+
+
+</head>
+
+
+<body>
+    <div class="root">
+        <header>
+            <nav>
+                <div class="left">PROT<span id="protfolio">FOLIO</span></div>
+
+                <div class="right">
+                    <ul>
+                        <li><a href="protfulio.html">HOME</a></li>
+                        <!-- <li><a href="">ABOUT</a></li> -->
+                        <!-- <li><a href="">SERVICE</a></li> -->
+                        <li><a href="https://github.com/SathiGuchait/">WORK</a></li>
+                        <li><a href="Sathi Guchait Resume.pdf">RESUME</a></li>
+
+
+                        <div class="dropdown">
+                            <li id="dropcontact">CONTACT</li>
+                            <div class="dropdown-content">
+                                <div id="contact">
+                                    MOBILE NO:9635277103<br>
+                                    EMAIL ID:sathiguchait8@gmail.com
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section1">
+                <div class="leftside">
+                    <span class="welcome"> WELCOME</span>
+                    <div id="name">I Am Sathi</div>
+                    <div>I am a <span id="element"></span></div>
+                </div>
+                <div class="rightside">
+                    <img src="sathi.jpeg">
+                </div>
+            </section>
+        </main>
+
+        <div class="footer">
+            <div id="footer">
+                <h3>SATHI</h3>
+                <P>2023 Design & Developed By <span id="foo">Sathi Guchait</span></P>
+            </div>
+
+
+        </div>
+
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+        <script>
+            
+            var typed = new Typed('#element', {
+                strings: ['WebDesiner.', 'Web Developer.'],
+                typeSpeed: 40,
+            });
+
+        </script>
+</body>
+
+</html>
